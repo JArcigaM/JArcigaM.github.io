@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(197, 5, 255);
+}
+h1,h2{
+    font-family: georgia;
+    text-align: center;
+}
+nav{
+    text-align: center;
+    
+}
+a:hover{
+    color:aqua
+}
+a:visited{
+    color: black;
+}
+hr{
+    height: 2px;
+    background-color: black;
+    border-color: black;
+}
+footer{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+figcaption{
+    text-align: center;
+}
+img{
+    align-items: center;
+    border-radius: 50px;
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    text-align: center;
+    background-color: grey;
+}
+.field{
+    font-size: larger;
+    padding: 0 !important;
+}
+
+.data td{
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    width: 150px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.black td:not(.field){
+    background-color: darkgrey !important;
+}
+.right{
+    text-align: right !important;
+}
+figcaption{
+    font-style: italic;
+}
