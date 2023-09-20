@@ -20,7 +20,7 @@
             ||
             <a href="tables.html">Tables</a>
             ||
-            <a href="forms.html">Tables</a>
+            <a href="forms.html">Forms</a>
             ||
             <a href="/">Back to Main Site</a>
         </nav>
@@ -30,7 +30,7 @@
         <h2>ITIS 3135 Forms</h2>
         <form action="#">
             <section role="region" aria-labelledby="user-info">
-                <h2 id="user-info" class="section-header">Info</h2>
+                <h2 id="user-info" >Info</h2>
                 <div class="info">
                     <label for="name">Name:</label>
                     <input type="text" name='name' id="name" placeholder='ex: Josh, Adam, Jessica' required/>
@@ -45,8 +45,49 @@
                 </div>
             </section>
             <section role="region">
-                <h2 class="section-header">Favorite Sport/s?</h2>
-                
+                <h2 >Favorite Sport/s?</h2>
+                <label class="checkboxes">
+                    <input id="checkbox" type="checkbox">Hockey
+                </label>
+                <label class="checkboxes">
+                    <input id="checkbox" type="checkbox">Soccer
+                </label>
+                <label class="checkboxes">
+                    <input id="checkbox" type="checkbox">Basketball
+                </label>
+                <label class="checkboxes">
+                    <input id="checkbox" type="checkbox">Football
+                </label>
+            </section>
+            <section role="region">
+                <h2 id="user-info" >How did you enjoy this experience?</h2>
+                <label class="radio-buttons">
+                    <input type="radio" id="radio1" name="radios"> Bad
+                </label>
+                <label class="radio-buttons">
+                    <input type="radio" id="radio2" name="radios"> Alright
+                </label>
+                <label class="radio-buttons">
+                    <input type="radio" id="radio3" name="radios"> Good
+                </label>
+                <label class="radio-buttons">
+                    <input type="radio" id="radio4" name="radios"> Great
+                </label>
+            </section>
+            <section role="region">
+                <h2>How did you hear about us?</h2>
+                <label for="referer">
+                    <select class="select" id="referer" name="referer">
+                        <option value="">(Select One)</option>
+                        <option value="1">Friend/Family</option>
+                        <option value="2">Advertisement</option>
+                        <option value="3">Youtube</option>
+                    </select>
+                </label>
+            </section>
+            <section role="region">
+                <input type="submit" class="submit">
+                <input type="reset" class="reset">
             </section>
         </form>
     </main>

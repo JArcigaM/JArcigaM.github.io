@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(168, 6, 255);
+    background-color: beige;
 }
 h1,h2{
     font-family: georgia;
@@ -10,10 +10,7 @@ nav{
     
 }
 a:hover{
-    color:aqua
-}
-a:visited{
-    color: black;
+    color:purple;
 }
 hr{
     height: 2px;
@@ -29,16 +26,44 @@ h3{
 figcaption{
     text-align: center;
 }
-img{
-    align-items: center;
-    border-radius: 50px;
+.checkboxes{
     display: block;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 1.5em;
+    font-size: 1.1rem;
 }
-.section-header{
-    text-align: left !important;
-
-
+label{
+    display: block;
+    
+}
+.info{
+    display: inline;
+    height: 1.5em;
+    font-size: 1.1rem;
+}
+.info label{
+    margin-top: .1em;
+    margin-bottom: .1em;
+}
+.radio-buttons{
+    display: block;
+    height: 1.5em;
+    font-size: 1.1rem;
+}
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+.select{
+    margin-bottom: 2rem;
+}
+.submit, .reset{
+  display: inline;
+  width: 30%;
+  margin: 2rem 3rem 1rem 3rem;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: rgb(212, 212, 212);
 }

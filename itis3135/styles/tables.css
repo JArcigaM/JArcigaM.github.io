@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(168, 6, 255);
+    background-color: beige;
 }
 h1,h2{
     font-family: georgia;
@@ -10,10 +10,7 @@ nav{
     
 }
 a:hover{
-    color:aqua
-}
-a:visited{
-    color: black;
+    color:purple;
 }
 hr{
     height: 2px;
