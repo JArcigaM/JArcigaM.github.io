@@ -26,14 +26,6 @@ h3{
 figcaption{
     text-align: center;
 }
-img{
-    align-items: center;
-    border-radius: 50px;
-    display: block;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
 .header{
     text-align: center;
     background-color: grey;
