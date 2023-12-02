@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Hockey Interest</title>
+    <style>
+        body{
+            background-color: #614051;
+            margin: 0;
+            padding: 0;
+        }
+        h1,h2{
+            font-family: georgia;
+            text-align: center;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        }
+        hr{
+            height: 2px;
+            background-color: black;
+            border-color: black;
+        }
+        footer{
+            text-align: center;
+        }
+        figcaption{
+            text-align: center;
+        }
+        section {
+            display: none;
+        }
+
+        section.active {
+            display: block;
+        }
+        button{
+            border-radius: 10px;
+            background-color: silver;
+            border: solid;
+            width: 150px;
+            height: 55px;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+        button:hover{
+            background-color: white;
+        }
+        figcaption{
+            font-style: italic;
+            margin-top: 10px;
+        }
+        header{
+            background-color: teal;
+            padding: 10px;
+        }
+        img#win{    
+            width: 100%;
+            height: auto;
+        }
+        .image-container{
+            display: flex;
+            align-items: center;
+            font-size: 1.5em;
+            
+        }
+        .image-container img{
+            max-width: 50%;
+            float: left;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .image-content{
+            flex: 1;
+        }
+        .image-container2{
+            display: flex;
+            align-items: center;
+            font-size: 1.5em;
+            
+        }
+        .image-container2 img{
+            max-width: 50%;
+            margin-right: 20px;
+            float: right;
+        }
+        .image-content2{
+            flex: 1;
+        }
+        .image-content2 h3, p{
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .image-container3{
+            display: flex;
+            align-items: center;
+            font-size: 1.5em;
+            
+        }
+        .image-container3 img{
+            max-width: 25%;
+            float: left;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .image-content3{
+            flex: 1;
+            font-size: 1.75em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Hockey Interest</h1>
+        <nav>
+            <button href="#" onclick="showPage('about')" >About Me</button>
+            <button href="#" onclick="showPage('why')">How I got into Hockey</button>
+            <button href="#" onclick="showPage('players')">Favorite Players</button>
+            <button href="#" onclick="showPage('teams')">Favorite Teams</button>
+            <button href="#" onclick="showPage('gallery')">Photo Gallery</button>
+        </nav>
+    </header>
+    <main>
+        
+        <section id="about" class="active">
+            <img src="images/win.gif" id="win">
+            <h2>About Me</h2>
+            <p></p>
+            
+        </section>
+
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="image-container"
+            <figure class="gallery">
+                <img src="images/me.JPG" alt="Hockey Rink" class="img1">
+                <figcaption>Me in the Anaheim Ducks Team store</figcaption>
+            </figure>
+            <figure class="gallery">
+                <img src="images/jersey.JPG" alt="jersey">
+                <figcaption>My jersey getting stitched with a player name.</figcaption>
+            </figure>
+            <figure class="gallery">
+                <img src="images/rink.JPG" alt="Ducks Vs Canes">
+                <figcaption>Honda Center in Anaheim Ducks</figcaption>
+            </figure>
+            </div>
+            
+        </section>
+
+        <section id="players">
+            <h2>My Favorite Players</h2>
+            <div class="image-container">
+                <img src="images/mason.jpg">
+                <div class="image-content">
+                    <h3>Mason McTavish:</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="image-container2">
+                <div class="image-content2">
+                    <h3>Jack Hughes:</h3>
+                    <p></p>
+                </div>
+                <img src="images/hughes.jpeg">
+            </div>
+            <div class="image-container">
+                <img src="images/eichel.jpg">
+                <div class="image-content">
+                    <h3>Jack Eichel:</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+            <h2>My Favorite Teams</h2>
+
+        <section id="teams">
+            <div class="image-container">
+                <img src="images/mightyducks.jpg">
+                <div class="image-content">
+                    <h3>Mighty Ducks of Anaheim:</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="image-container2">
+                <div class="image-content2">
+                    <h3>New Jersey Devils:</h3>
+                    <p></p>
+                </div>
+                <img src="images/nj.jpg">
+            </div>
+        </section>
+
+        <section id="why">
+            <h2>How I got into hockey</h2>
+            <div class="image-container3">
+                <img src="images/md1.jpeg">
+                <div class="image-content3">
+                    <h3>How it started</h3>
+                    <p>As a kid I always loved watching movies and especially films that weren't from my families country of Mexico.
+                        Not because I didn't like the films but they were so much different than the ones being shown.
+                        So when I found a very enjoyable film I usually gained an obsession of the thing being depicted. Which is why I'm big into hockey, cars, and music.
+                        But we aren't here to talk about the other two. In my home a film that always came on the television was the Mighty Ducks films. 
+                        Now for me as being part of the first generation born here in the US instead of Mexico. Found this story of a rag tag team of kids who went on to win it all, amazing.
+       
+                        </p>
+                </div>
+            </div>           
+        </section>
+    </main>
+
+    <script>
+        function showPage(pageId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            const activeSection = document.getElementById(pageId);
+            activeSection.classList.add('active');
+        }
+        showPage('about');
+    </script>
+</body>
+<footer>
+    <p>Page built by Arciga Enterprises © 2023</p>
+    <a href="https://validator.w3.org/check?uri=referer">
+        <img class='validator' style="border:0;width:88px;height:31px"
+        src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!" id="validation_link_html">
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img class='validator'style="border:0;width:88px;height:31px"
+        src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
+        CSS!" id="validation_link_css">
+    </a>
+    <script>document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=referer" + location.href);</script>
+    <script>document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/check/referer" + location.href);</script>
+</footer>
+</html>
