@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Arciga || ITIS 3135 Homepage</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <div data-include="components\header.html"></div>
+    <main>
+        <h2>BYO Intro</h2>
+        <form class='notHidden' id="byoForm">
+            <h3>Time to BYO Intro Page, please fill out the form below so we can create your own page</h3>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" value="Joshua" required>
+
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" value="Aardwolf" required>
+
+            <label>Add your image:</label>
+            <input type="file" name="image" id="image" required>
+
+            <label for="caption">Image Caption:</label>
+            <input type="text" id="caption" value="Me in Minnesota" required>
+
+            <label for="personal">Enter your personal background:</label>
+            <input type="text" id="personal" value="I'm from NC but im part of the first generation born here in the U.S and not Mexico." required>
+
+            <label for="professional">Enter your professional background:</label>
+            <input type="text" id="professional" value="Currently don’t have any computer science related work." required>
+
+            <label for="academic">Emter your academic background:</label>
+            <input type="text" id="academic" value="Graduated from high school and got an Associates in Science at my community college." required>
+
+            <label for="background">Enter your Web background:</label>
+            <input type="text" id="background" value="Have always been interested in working with computers." required>
+
+            <label for="platform">Enter your computer platform:</label>
+            <input type="text" id="platform" value="Windows 10" required>
+
+            <label for="courses">Please enter your courses:</label>
+            <div id="courseList">
+                
+            </div>
+            <button id="courses" onclick="addCourse()">Add Course</button>
+
+            <label for="funFact">Enter a fun fact about yourself:</label>
+            <input type="text" id="funFact" value="Being born to Mexican parents and raised by them, my Spanish ended up not great." required>
+
+            <label for="additional">Is there anything else you would like to share about yourself?</label>
+            <input type="text" id="additional" value="I’m a fan of hockey (Anaheim Ducks)" required>
+            <br>
+            <label for="checkbox">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available. <input type="checkbox" required></label>
+            <br>
+
+            <input type="submit">
+            <input type="reset" >
+        </form>
+        
+        <div class="hidden" id="introPage">
+            <h3 id="byoName"></h3>
+            <figure id="byoImage">
+                
+                <figcaption><em><span id="byoCaption"></span></em></figcaption>
+            </figure>
+            <ul>
+                <li><b>Personal Background:</b> <span id="byoPersonal"></span></li>
+                <li><b>Professional Background:</b> <span id="byoProfessional"></span></li>
+                <li><b>Academic Background:</b> <span id="byoAcademic"></span> </li>
+                <li><b>Background in this subject:</b> <span id="byoBackground"></span></li>
+                <li><b>Primary Computer Platform:</b> <span id="byoPlatform"></span></li>
+                <li><b>Courses I'm Taking & why:</b>
+                    <ul id="byoCourseList">
+                        
+                    </ul>
+                </li>
+                <li><b>Funny/Interesting Item to Remember me by:</b> <span id="byoFunFact"></span></li>
+                <li><b>I'd also like to Share:</b> <span id="byoAdditional"></span></li>
+            </ul>
+            <button id="back" onclick="back()">Back to form</button>
+        </div>
+    </main>
+    <div data-include="components\footer.html"></div>
+    <script src="scripts/include.min.js"></script>
+    <script src="scripts/survey.js"></script>
+</body>
+</html>
