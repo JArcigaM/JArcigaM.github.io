@@ -67,7 +67,7 @@ img:not(.validator){
 }
 @media (min-width: 576){
     body{
-        margin: 20px;
+        margin: 10px;
     }
     img{
         max-width: 100%;
