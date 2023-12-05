@@ -65,3 +65,12 @@ img:not(.validator){
 .hidden{
     display: none;
 }
+@media (min-width: 576){
+    body{
+        margin: 20px;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
