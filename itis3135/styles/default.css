@@ -72,5 +72,6 @@ img:not(.validator){
     img{
         max-width: 100%;
         height: auto;
+        margin-right: 20px;
     }
 }
