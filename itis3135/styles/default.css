@@ -65,6 +65,37 @@ img:not(.validator){
 .hidden{
     display: none;
 }
+.calculator_keys {
+    background-color: #e2fdff;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+.calculator {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20em;
+    margin-bottom: 50px;
+    border: solid;
+}
+.calculator_display {
+    background-color: #b57edc;
+    color: #fff;
+    font-size: 1em;
+    padding: 0.5em 0.75em;
+    text-align: right;
+}
+
+.key--operator {
+  background-color: white;
+}
+.key--equal {
+  background: #ffa9a3;
+  grid-column: -2;
+  grid-row: 2 / span 4;
+}
+
 @media (min-width: 576){
     body{
         margin: 10px;
