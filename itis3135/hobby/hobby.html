@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title>My Hockey Interest</title>
     <style>
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
         body{
             background-color: #614051;
             margin: 0;
             padding: 0;
         }
         h1,h2{
-            font-family: georgia;
             text-align: center;
         }
         nav{
@@ -44,7 +46,6 @@
             width: 150px;
             height: 55px;
             margin-left: 5px;
-            font-weight: bold;
         }
         button:hover{
             background-color: white;
@@ -73,9 +74,6 @@
             margin-right: 20px;
             margin-left: 20px;
         }
-        .image-content{
-            flex: 1;
-        }
         .image-container2{
             display: flex;
             align-items: center;
@@ -87,10 +85,8 @@
             margin-right: 20px;
             float: right;
         }
-        .image-content2{
-            flex: 1;
-        }
-        .image-content2 h3, p{
+
+        .image-content2 *{
             margin-right: 20px;
             margin-left: 20px;
         }
@@ -106,17 +102,76 @@
             margin-right: 20px;
             margin-left: 20px;
         }
-        .image-content3{
-            flex: 1;
-            font-size: 1.75em;
+        p{
+            height: 50%;
+            margin: auto;
+            font-size: auto;  
         }
+        .image-container5 img{
+            max-width: 50%;
+        }
+        .image-container5{
+            display: flex;
+            align-items: center;
+            font-size: 1.5em;
+        }
+        .image-container5 p, h3{
+            margin-left: 25px;
+            margin-right: 10px;
+        }
+        .aboutInfo{
+            text-indent: 25px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-bottom: 50px;
+            font-size: large;
+        }
+        #gallery {
+            text-align: center;
+        }
+        .image-container4 {
+            display: flex ;
+            justify-content: center;
+            gap: 20px;
+            flex-direction: row;
+        }
+        .gallery {
+            max-width: auto;
+            text-align: center;
+        }
+
+        .gallery img{
+            width: 100%;
+            height: auto;
+            max-height: auto;
+        }
+
+        .gallery figcaption {
+            margin-top: 10px;
+        }
+        @media only screen and (max-width: 720px) {
+        .image-container4 {
+            flex-direction: column;
+        }
+    }
+    @media only screen and (max-width: 1000px){
+            .image-content2 *, .image-content *{
+            font-size: large;
+        }
+        .image-content6{
+            font-size: medium;
+        }
+    }
+    footer{
+        margin-top: 50px;
+    }
     </style>
 </head>
 <body>
     <header>
         <h1>My Hockey Interest</h1>
         <nav>
-            <button href="#" onclick="showPage('about')" >About Me</button>
+            <button href="#" onclick="showPage('about')" >What</button>
             <button href="#" onclick="showPage('why')">How I got into Hockey</button>
             <button href="#" onclick="showPage('players')">Favorite Players</button>
             <button href="#" onclick="showPage('teams')">Favorite Teams</button>
@@ -127,16 +182,21 @@
         
         <section id="about" class="active">
             <img src="images/win.gif" id="win">
-            <h2>About Me</h2>
-            <p></p>
-            
+            <h2>About</h2>
+            <div class="aboutInfo">
+                <p>This is a page about my hockey interest that I got into 7 years ago. But had always loved since I was a kid and saw the Mighty Duck films in the early
+                    2000s. I spend most of my time watching the Anaheim Ducks but honestly I'm a fan of the sport overall. From the World Juniors in Canada to some NCAA
+                    games to the NHL. If I'm not able to get out to a game here, I'm usually watching games online or catching highlights of the best plays of the week.
+                    I did try getting into playing hockey a while back but I'm not great on skate even with doing it for years as a good. Then with my knee injury, I haven't
+                    been able to get out on the ice or out or some streety hockey. But I still love watching the sport and following my favorite players/teams.
+                </p>
+            </div>        
         </section>
-
         <section id="gallery">
             <h2>Photo Gallery</h2>
-            <div class="image-container"
+        <div class="image-container4">
             <figure class="gallery">
-                <img src="images/me.JPG" alt="Hockey Rink" class="img1">
+                <img src="images/me.JPG" alt="Hockey Rink">
                 <figcaption>Me in the Anaheim Ducks Team store</figcaption>
             </figure>
             <figure class="gallery">
@@ -157,13 +217,26 @@
                 <img src="images/mason.jpg">
                 <div class="image-content">
                     <h3>Mason McTavish:</h3>
-                    <p></p>
+                    <p>As a fan of Mason McTavish, I’m continually impressed by his performance on the ice. Born in Switzerland and raised in Canada, 
+                        McTavish has shown exceptional talent from a young age. Which got him drafted at 3rd overall in the 2021 Entry Draft by the Anaheim Ducks. 
+                        What’s more, he made his NHL debut with the Ducks in 2021 and became the youngest Duck to score a goal. 
+                        His stats for the 2023-24 regular season are impressive, with 10 goals and 11 assists in 23 games. Despite a recent injury, 
+                        he’s shown resilience and determination. His skill, dedication, and potential make it easy to be a big fan of Mason McTavish. 
+                        Just about every time he touches the puck he makes a big pressence on the ice and some times even looks like the best player out there as well 
+                        which is very fun to watch. His future in the NHL looks bright, and I can’t wait to see where his career takes him next.</p>
                 </div>
             </div>
             <div class="image-container2">
                 <div class="image-content2">
                     <h3>Jack Hughes:</h3>
-                    <p></p>
+                    <p>Jack Hughes, is an American professional ice hockey center and alternate captain for the New 
+                        Jersey Devils. Hughes was drafted first overall by the Devils in the 2019 NHL Entry Draft. He has shown insane talent and has 
+                        been producing at an elite level. In the 2023-24 regular season so far, he scored 9 goals and made 21 assists in 17 games. 
+                        Despite the physical demands of the sport, Hughes continues to impress with his resilience and skill when most 
+                        thought his small frame would hinder his play in the big league. With some even calling him a bust over his first few seasons, but it seems
+                        now that its not even close to true. His performance in the game between the New Jersey Devils 
+                        and Vancouver Canucks was particularly noteworthy, where he shined the brightest among his brothers Quinn Hughes and Luke Hughes. 
+                        His dedication to the sport and his team is truly inspiring, making him a must watch player in the NHL.</p>
                 </div>
                 <img src="images/hughes.jpeg">
             </div>
@@ -171,24 +244,40 @@
                 <img src="images/eichel.jpg">
                 <div class="image-content">
                     <h3>Jack Eichel:</h3>
-                    <p></p>
+                    <p>Jack Eichel, drafted 2nd overall by the Buffalo Sabres in the 2015 NHL Entry Draft. Has had a roller coast of
+                        a career but has always been considered one of the best in the league. He didn't get a lot of respect for
+                        his skill considering he was playing on a very poorly managed Buffalo Sabres. But I felt he was still pretty
+                        fun to watch. Now with the Vegas Golden Knights hes a point per game player this season with 12 goals and 18
+                        assists for 30 points in 27 games. So hes living up to his expectations of being drafted behind one of the 
+                        greatest hockey player of all time Connor Mcdavid. Like the other two on this list I've been a fan of them 
+                        for being underdogs but all three of them are showing their phenomal skill. </p>
                 </div>
             </div>
         </section>
-            <h2>My Favorite Teams</h2>
-
         <section id="teams">
+            <h2>My Favorite Teams</h2>
             <div class="image-container">
                 <img src="images/mightyducks.jpg">
                 <div class="image-content">
                     <h3>Mighty Ducks of Anaheim:</h3>
-                    <p></p>
+                    <p>It shouldn't be a surprise that my favorite team is the Anaheim Ducks. From the hype of the 90s to the sick jerseys
+                        and color scheme back then to now. There's not much to dislike about them even though they might be prety bad right now.
+                        But their prospect pool and rookies are some of the best in the league right now. With our 2nd overall this past summer
+                        playing some of the best hockey I've seen ever and hes just an 18 year old. Then Mason McTavish, Terry Zegras, and Pavel
+                        Mintyukov playing like our best defensemen in his first season. There is just a lot to love right now and so much hype for
+                        future.
+                    </p>
                 </div>
             </div>
             <div class="image-container2">
                 <div class="image-content2">
                     <h3>New Jersey Devils:</h3>
-                    <p></p>
+                    <p>My 2nd favorite team might be a surprise since I've lived in North Carolina all my life and you'd think I'd be a fan
+                        of the Carolina Hurricanes. But I was a big fan of Taylor Hall and his time there. They weren't amazing but they
+                        were entertaining. Right now though they're amazing and in my opinion the 2nd best team to watch for incredible plays.
+                        Jack Hughes alone is a reason to watch this team but they have other amazing players too like Nico Hischier, Jesper Bratt,
+                        and no other than Luke Hughes. Just overall really entertaining to watch and I wouldn't miss it. 
+                    </p>
                 </div>
                 <img src="images/nj.jpg">
             </div>
@@ -196,19 +285,34 @@
 
         <section id="why">
             <h2>How I got into hockey</h2>
-            <div class="image-container3">
+            <div class="image-container5">
                 <img src="images/md1.jpeg">
-                <div class="image-content3">
+                <div class="image-content5">
                     <h3>How it started</h3>
                     <p>As a kid I always loved watching movies and especially films that weren't from my families country of Mexico.
                         Not because I didn't like the films but they were so much different than the ones being shown.
                         So when I found a very enjoyable film I usually gained an obsession of the thing being depicted. Which is why I'm big into hockey, cars, and music.
                         But we aren't here to talk about the other two. In my home a film that always came on the television was the Mighty Ducks films. 
-                        Now for me as being part of the first generation born here in the US instead of Mexico. Found this story of a rag tag team of kids who went on to win it all, amazing.
+                        Now me being part of the first generation born here in the US instead of Mexico. Found this story of a rag tag team of kids who went on to win it all, amazing.
        
                         </p>
                 </div>
-            </div>           
+            </div>
+            <div class="image-container5">
+                <img src="images/match.jpg">
+                <div class="image-content6">
+                    <h3>Now</h3>
+                    <p>
+                        In highschool my best friend was playing on a local hockey team. Having learned to skate on roller blades and ice skates with him. He had
+                        actually followed through with being not just a fan of hockey when we grew up but wanting to play. I thought to myself, well I'm no longer
+                        playing soccer or really a fan of any sport. Why not get into hockey but the Carolina Hurricanes at the time weren't really entertaining and
+                        honestly they were the opposite. So I thought to myself how are those Mighty Ducks doing from when I grew up. Well they had rebranded to 
+                        the Anaheim Ducks, quite ugly of a jersey but they were entertaining. So I said screw it why not be a fan of the team that originated from
+                        one of my favorite childhood movies. So now I got to any Ducks game I can get out to out here on the east coast and have been out to Anaheim
+                        a few times for some matches. I've now been a huge fan of them for 7 years and its only getting better.
+                    </p>
+                </div>
+            </div>          
         </section>
     </main>
 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Arciga || ITIS 3135 Homepage</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <div data-include="components\header.html"></div>
+    <main >
+        <h2>ITIS 3135 Salary Arrays</h2>
+        <select id="selector">
+            <option value="Peso">Peso</option>
+            <option value="Fren">Fren</option>
+        </select>
+        <form>
+            <label>User</label>
+            <input type="text" id="inUser" required>
+            <label>Salary</label>
+            <input type="text" id="inSalary" required>
+        </form>
+        <button id="addSalary" onclick="addSalary()">Add Salary</button>
+        <button id="displayResults" onclick="displayResults()">Display Results</button>
+        <button id="displaySalary" onclick="displaySalary()">Display Salary</button>
+        <div id="results" class="hidden">
+            <h2>Results</h2>
+            <p id="highest"></p>
+            <p id="average"></p>
+        </div>
+        <div id="salaries" class="hidden">
+            <table id="salaryTable">
+                <thead>
+                    <th>User</th>
+                    <th>Salary</th>
+                </thead>
+                <tbody id="tableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <div data-include="components\footer.html"></div>
+    <script src="scripts/include.min.js"></script>
+    <script src="scripts/arrays.js"></script>
+</body>
+</html>

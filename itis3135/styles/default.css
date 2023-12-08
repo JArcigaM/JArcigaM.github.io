@@ -95,6 +95,36 @@ img:not(.validator){
   grid-column: -2;
   grid-row: 2 / span 4;
 }
+#average{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+#highest{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+#salaryTable{
+    width: 50%;
+    border-collapse: collapse;
+    margin: auto;
+}
+#salaryTable th, td{
+    padding: 10px;
+    border: 1px solid;
+}
+#salaryTable th{
+    background-color: #ffa9a3;
+    font-size: x-large;
+    font-weight: bold;
+}
+#salaryTable td{
+    background-color: lavender;
+    font-size: large;
+    font-weight: bold;
+    text-align:  center;
+}
 
 @media (min-width: 576){
     body{
