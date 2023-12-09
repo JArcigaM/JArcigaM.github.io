@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Arciga || ITIS 3135 Slidshow</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <style>
+        .container{
+            position: relative;
+        }
+        .mySlides {
+            display: none;
+        }
+        .cursor {
+            cursor: pointer;
+        }
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: lavender;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .column img{
+            max-width: 100px;
+            border-radius: 5%  !important;
+        }
+        .numbertext {
+            color: lavender;
+            font-size: larger;
+            padding: 50px 12px;
+            position: absolute;
+            top: 0;
+        }
+        .caption-container {
+            text-align: center;
+            background-color: #ffa9a3;
+            padding: 2px 10px;
+            border-radius: 5px;
+            color: black;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .column {
+            float: left;
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div data-include="components\header.html"></div>
+    <main>
+        <h2>ITIS 3135 Slidshow</h2>
+        <div class="container">
+            <!-- Main Display -->
+            <div class="mySlides">
+                <div class="numbertext">1 / 10</div>
+                <img src="images/Joker.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 10</div>
+                <img src="images/Ocean.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 10</div>
+                <img src="images/switch.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 10</div>
+                <img src="images/Hat.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 10</div>
+                <img src="images/album.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 10</div>
+                <img src="images/Roofs.JPG" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 10</div>
+                <img src="images/Controller.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 10</div>
+                <img src="images/Ice Rink.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 10</div>
+                <img src="images/Glasses.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">10 / 10</div>
+                <img src="images/Art.jpg" style="width:100%">
+            </div>
+
+            <!-- Buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Small Image Gallery-->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/Joker.jpg" onclick="currentSlide(1)" alt="Joker Card">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Ocean.jpg" onclick="currentSlide(2)" alt="Ocean">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/switch.jpg" onclick="currentSlide(3)" alt="Switch">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Hat.jpg" onclick="currentSlide(4)" alt="Hat">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/album.jpg" onclick="currentSlide(5)" alt="Album">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Roofs.JPG" onclick="currentSlide(6)" alt="Roofs">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Controller.jpg" onclick="currentSlide(7)" alt="Controller">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Ice Rink.jpg" onclick="currentSlide(8)" alt="Ice Rink">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Glasses.jpg" onclick="currentSlide(9)" alt="Glasses">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Art.jpg" onclick="currentSlide(10)" alt="Art">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div data-include="components\footer.html"></div>
+    <script src="scripts/include.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
+</body>
+</html>
