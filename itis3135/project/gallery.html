@@ -5,12 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weymouth Gallery</title>
         <link rel="stylesheet" href="styles/default.css">
+        <link rel="stylesheet" href="styles/magnific-popup.css">
     </head>
     <body>
         <div data-include="components\header.html"></div>
-        
+        <h2>Gallery</h2>
+        <p style="text-align: center;">Click on image to zoom in</p>
+        <div class="gallery" style="margin: 50px;">
+            <a href="images/IMG_0323.jpg"><img src="images/IMG_0323.jpg" style="width:210px;" alt="Image 1"></a>
+            <a href="images/IMG_0322.jpg"><img src="images/IMG_0322.jpg"style="width:250px;" alt="Image 2"></a>
+            <a href="images/IMG_0325.jpg"><img src="images/IMG_0325.jpg"style="width:210px;" alt="Image 3"></a>
+            <a href="images/IMG_0326.jpg"><img src="images/IMG_0326.jpg"style="width:250px;" alt="Image 4"></a>
+            <a href="images/IMG_0327.jpg"><img src="images/IMG_0327.jpg"style="width:210px;" alt="Image 5"></a>
+            <a href="images/IMG_0329.jpg"><img src="images/IMG_0329.jpg"style="width:250px;" alt="Image 6"></a>
+        </div>
     </body>
     <div></div>
     <div data-include="components\footer.html"></div>
     <script src="scripts/include.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/jquery.magnific-popup.js"></script> <!-- Calls the Magnific Popup JQuery Script https://plugins.jquery.com/magnific-popup -->
+    <script src="scripts/gallery.js"></script>
 </html>
